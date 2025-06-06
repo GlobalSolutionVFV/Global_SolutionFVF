@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidade - FVF</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <nav class="nav">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" class="logo" alt="logo" >
+                </a>
+                <button class="hamburguer" aria-label="Menu" aria-expanded="false"></button>
+                <ul class="menu">
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./solucao.html">Solução</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./dica.html">Curiosidades</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="fade-in">
+    <!-- Banner principal -->
+    <section class="index-banner">
+        <div class="card-banner">
+            <div class="left-side">
+                <h1>O que são Mudanças Climáticas?</h1>
+                <p>As mudanças climáticas referem-se às alterações no clima do planeta que ocorrem em diferentes escalas de tempo. Essas mudanças podem ser naturais ou causadas pela ação humana, especialmente a partir da Revolução Industrial.</p>
+                <p>O aumento da temperatura global, o derretimento das calotas polares, a elevação do nível do mar e eventos climáticos extremos são alguns dos efeitos mais visíveis dessas mudanças.</p>
+                <div class="btns-sessao">
+                    <button onclick="mostrarSessao('sessao-sabia')"
+                    class="btn-cur">Você Sabia?</button>
+                    <button onclick="mostrarSessao('sessao-dica')" class="btn-cur">Dicas</button>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <!-- Seção conteudo - Você Sabia -->
+    <section class="services fade-in hidden" id="sessao-sabia">
+        <div class="container">
+            <h2 class="section-title">Você Sabia?</h2>
+            <div class="cards-container">
+                <div class="card-cur">
+                    <!--Fato 1-->
+                    <div class="card-titulo">
+                        <div class="bg-icon">
+                            <img src="./img/icones/temperatura.svg" alt="">
+                        </div>
+                        <h3 class="font-red">Temperatura Global</h3>
+                    </div>
+                    <p>
+                        A temperatura média global já aumentou 1,1°C desde a era pré-industrial. Se continuarmos no ritmo atual, poderá aumentar até 2,7°C até 2100.
+                    </p>
+                </div>
+                    <!--Fato 2-->
+                <div class="card-cur">
+                    <div class="card-titulo">
+                        <div class="bg-icon">
+                            <img src="./img/icones/sorvetinho.svg" alt="">
+                        </div>
+                        <h3 class="font-lightpurple">Gelo Ártico</h3>
+                    </div>
+                    <p>
+                        O gelo marinho do Ártico está diminuindo 12,8% por década. Desde 1979, perdemos uma área de gelo equivalente a 1,5 vezes o tamanho do Brasil.
+                    </p>
+                </div>
+                    <!--Fato 3-->
+                <div class="card-cur">
+                    <div class="card-titulo">
+                        <div class="bg-icon">
+                            <img src="./img/icones/fogo.svg" alt="">
+                        </div>
+                        <h3 class="font-orange">Incêndios Florestais</h3>
+                    </div>
+                    <p>
+                        Entre 2001 e 2020, os incêndios florestais aumentaram 13% em todo o mundo. A temporada de incêndios agora é 20% mais longa do que há 30 anos.
+                    </p>
+                </div>
+                    <!--Fato 4-->
+                <div class="card-cur">
+                    <div class="card-titulo">
+                        <div class="bg-icon">
+                            <img src="./img/icones/nível do mar.svg" alt="">
+                        </div>
+                        <h3 class="font-blue">Nível do Mar</h3>
+                    </div>
+                    <p>
+                        O nível do mar subiu 20 cm no último século. A taxa de aumento dobrou nos últimos 20 anos e continua acelerando.
+                    </p>
+                </div>
+                    <!--Fato 5-->
+                <div class="card-cur">
+                    <div class="card-titulo">
+                        <div class="bg-icon">
+                            <img src="./img/icones/chuva.svg" alt="">
+                        </div>
+                        <h3 class="font-gray">Eventos Extremos</h3>
+                    </div>
+                    <p>
+                        A frequência de eventos climáticos extremos aumentou 5 vezes nos últimos 50 anos. Enchentes e tempestades são agora 7 vezes mais comuns.
+                    </p>
+                </div>
+                    <!--Fato 6-->
+                <div class="card-cur">
+                    <div class="card-titulo">
+                        <div class="bg-icon">
+                            <img src="./img/icones/folha.svg" alt="">
+                        </div>
+                        <h3 class="font-green">Biodiversidade</h3>
+                    </div>
+                    <p>
+                        1 milhão de espécies estão ameaçadas de extinção devido às mudanças climáticas. Até 50% das espécies podem enfrentar extinção até 2100.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção conteudo - Dicas -->
+
+    <section class="index-banner fade-in hidden" id="sessao-dica">
+        <div class="container">
+            <h2 class="section-title">Dicas para Diferentes Situações Climáticas</h2>
+
+            <!-- Seção Dica - Botões -->
+            <div class="seletor-dica">
+                <button onclick="mostrarTab('quente')" class="tab-ativo" id="tab-quente">Dias Quentes</button>
+                <button onclick="mostrarTab('chuvoso')" class="" id="tab-chuvoso">Dias Chuvosos</button>
+                <button onclick="mostrarTab('frio')" class="" id="tab-frio">Dias Frios</button>
+                <button onclick="mostrarTab('geral')" class="" id="tab-geral">Dicas Gerais</button>
+            </div>
+
+            <!-- Card Dica - Quente -->
+
+            <div class="dicas fade-in" id="conteudo-quente">
+                <h1>Dicas para Dias Quentes</h1>
+                <div class="container-dicas">
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/garrafa agua.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Hidrate-se</h3>
+                            <p>
+                                Beba pelo menos 2 litros de água por dia. Evite bebidas alcoólicas e com cafeína que desidratam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/camiseta.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Vista-se adequadamente</h3>
+                            <p>
+                                Use roupas leves, claras e de algodão. Chapéus e óculos escuros protegem do sol.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/sol.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Evite sol forte</h3>
+                            <p>
+                                Fique na sombra entre 10h e 16h. Use protetor solar FPS 30 ou superior.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/casa.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Resfrie sua casa</h3>
+                            <p>
+                                Mantenha persianas fechadas durante o dia. Use ventiladores ou ar condicionado com moderação.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Dica - Chuvoso -->
+            <div class="dicas fade-in hidden" id="conteudo-chuvoso">
+                <h1>Dicas para Dias Chuvosos</h1>
+                <div class="container-dicas">
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/guarda chuva.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Proteja-se da chuva</h3>
+                            <p>
+                                Use capa de chuva ou guarda-chuva. Calçados impermeáveis evitam doenças.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/carro.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Dirija com cuidado</h3>
+                            <p>
+                                Reduza a velocidade, mantenha distância e evite frear bruscamente.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/casa azul.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Previna enchentes</h3>
+                            <p>
+                                Mantenha calhas limpas e verifique se há vazamentos em casa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/nuvem com raio.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Cuidado com raios</h3>
+                            <p>
+                                Evite áreas abertas, árvores isoladas e objetos metálicos durante tempestades.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Dica - Frio -->
+            <div class="dicas fade-in hidden" id="conteudo-frio">
+                <h1>Dicas para Dias Frios</h1>
+                <div class="container-dicas">
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/meias de frio.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Vista-se em camadas</h3>
+                            <p>
+                                Use várias camadas de roupa para reter calor. Não esqueça gorro, luvas e cachecol.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/casa roxa.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Mantenha a casa aquecida</h3>
+                            <p>
+                                Feche janelas à noite. Use aquecedores com segurança, mantendo ventilação adequada.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/garfo e faca.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Alimentação adequada</h3>
+                            <p>
+                                Consuma sopas, chás e alimentos quentes. Bebidas quentes ajudam a manter a temperatura corporal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/coração.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Cuide da saúde</h3>
+                            <p>
+                                Lave as mãos com frequência para evitar gripes. Vacine-se contra a gripe anualmente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Dica - Geral -->
+            <div class="dicas fade-in hidden" id="conteudo-geral">
+                <h1>Dicas Gerais para Mudanças Climáticas</h1>
+                <div class="container-dicas">
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/reclcle.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Reduza, Reuse, Recicle</h3>
+                            <p>
+                                Diminua seu consumo, reutilize produtos e recicle materiais para reduzir emissões de CO2.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/onibus.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Transporte sustentável</h3>
+                            <p>
+                                Use transporte público, bicicleta ou caminhe. Se dirigir, considere carros elétricos ou híbridos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/economize energia.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Economize energia</h3>
+                            <p>
+                                Use lâmpadas LED, desligue aparelhos em standby e prefira eletrodomésticos eficientes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-dica">
+                        <div class="bg-icon">
+                            <img src="./img/icones/arvore.svg" alt="">
+                        </div>
+                        <div class="dicas-conteudo">
+                            <h3>Plante árvores</h3>
+                            <p>
+                                Uma árvore absorve até 22kg de CO2 por ano. Plante em seu jardim ou participe de projetos de reflorestamento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+        <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="./index.html">Início</a>
+                <a href="./solucao.html">Solução</a>
+                <a href="./sobre.html">Sobre</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./contato.html">Contato</a>
+                <a href="./dica.html">Curiosidade</a>
+            </div>
+            <p class="copyright">© 2025 Nome Grupo - Fiap. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+</html>
