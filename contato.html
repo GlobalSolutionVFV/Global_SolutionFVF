@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - FVF</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container-header">
+            <nav class="nav">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" class="logo" alt="logo" >
+                </a>
+                <button class="hamburguer" aria-label="Menu" aria-expanded="false"></button>
+                <ul class="menu">
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./solucao.html">Solução</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./dica.html">Curiosidades</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+     <main class="fade-in">
+        <section class="banner-forms">
+            <div class="container-forms">
+                <h1>Entre em Contato</h1>
+                <form action="" class="formulario" id="ctt-form">
+                    <div class="div-form">
+                        <label for="name">Nome</label>
+                        <input 
+                        type="text"
+                        id="name"
+                        placeholder="Insira seu nome"
+                        required
+                        />
+                    </div>
+                    <div class="div-form">
+                        <label for="email">Email</label>
+                        <input 
+                        type="email" 
+                        id="email" 
+                        placeholder="Insira seu email"
+                        required
+                        />
+                    </div>
+                    <div class="div-form">
+                        <label for="telephone">Número de Telefone</label>
+                        <input 
+                        type="tel"
+                        pattern="\(\d{2}) \d{5}-\d{4}"
+                        id="telephone"
+                        placeholder="Insira seu telefone"
+                        required
+                        />
+                    </div>
+                    <div class="div-form">
+                        <label for="assunto">Assunto</label>
+                        <input type="text"
+                        id="assunto"
+                        placeholder="Insira o assunto"
+                        required
+                        />
+                    </div>
+                    <div class="div-form div-conteudo">
+                        <label for="mensagem">Mensagem</label> 
+                        <input type="text"
+                        id="mensagem"
+                        placeholder="Digite sua mensagem aqui...."
+                        required
+                        />
+                    </div>
+                    <button  class="confirm" type="submit">Enviar mensagem</button>
+                </form>
+                
+            </div>
+        </section>
+    </main>
+        
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="./index.html">Início</a>
+                <a href="./solucao.html">Solução</a>
+                <a href="./sobre.html">Sobre</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./contato.html">Contato</a>
+                <a href="./dica.html">Curiosidade</a>
+            </div>
+            <p class="copyright">© 2025 FVF - Fiap. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+</html>
