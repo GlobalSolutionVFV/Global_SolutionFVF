@@ -225,12 +225,13 @@ div button.tab-ativo {
 }
 
 .fade-in {
-            animation: fadeIn 0.5s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
 /* Botões */
 
@@ -319,6 +320,10 @@ div button.tab-ativo {
 .card h3 {
     margin: 10px 0;
     color: var(--cor-card-font);
+}
+
+.distancia{
+    margin-bottom: 16px;
 }
 
 /* Card */
